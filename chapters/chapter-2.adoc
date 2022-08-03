@@ -4,10 +4,7 @@
 To install graphene you must have go 1.18 or greater and git installed then you can run these commands to build and install it
 [source,shell,]
 ----
-$ git clone https://github.com/graphenelang/graphene
-$ cd graphene
-$ go build
-$ go install zimlit/graphene
+$ go install github.com/graphenelang/graphene@latest
 ----
 Now test that it's installed by running
 [source,shell,]
