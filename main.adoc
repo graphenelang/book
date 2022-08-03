@@ -1,0 +1,16 @@
+= The Graphene Programming Language
+:author: Devin Rockwell
+:email: zimlit2010@gmail.com
+:revnumber: v0.1
+:revdate: 2022-8-1
+:doctype: book
+:sectnums:
+:toc: left
+:toclevels: 2
+:toc-title: Table of Contents
+:description: A book for learning the graphene programming language
+:source-highlighter: rouge
+
+include::chapters/chapter-1.adoc[]
+
+include::chapters/chapter-2.adoc[]

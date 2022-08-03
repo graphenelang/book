@@ -1,0 +1,48 @@
+== Getting Started
+
+=== Instalation
+To install graphene you must have go 1.18 or greater and git installed then you can run these commands to build and install it
+[source,shell,]
+----
+$ git clone https://github.com/graphenelang/graphene
+$ cd graphene
+$ go build
+$ go install zimlit/graphene
+----
+Now test that it's installed by running
+[source,shell,]
+----
+$ graphene help
+----
+This should output a help message. If it doesn't make sure wherever go installs modules is in your $PATH environment variable.
+
+=== Your First Program
+The classic hello world program in graphene is
+[source,graphene, ]
+----
+fn main()
+    println("Hello, world!")
+end
+----
+
+Save this file to hello.graphene and run it with these commands
+[source,shell,]
+----
+$ graphene build hello.graphene
+$ ./hello
+----
+This should output Hello, world!
+
+==== Anatomy of this program
+To explain how this program works you must first look at the main declaration
+[graphene,source]
+----
+fn main()
+end
+----
+This is a function declaration it states that main is a function which takes no parameters. If there were parameters they would be placed in between the parenthesis. The main function is required in all programms and is always run first. the line:
+[graphene,source]
+----
+println("Hello, world!")
+----
+Calls the function println with the string "Hello, world!"; The println function prints the given argument followed by a newline.
